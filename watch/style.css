@@ -1,0 +1,224 @@
+a {
+	text-decoration: none;
+	color: white;
+}
+
+video {
+	width: 100%;
+	border-radius: 0.5rem;
+	margin-bottom: 0.5rem;
+}
+
+.video_section {
+	grid-row: 2 / 13;
+	grid-column: 1 / 7;
+	overflow: scroll;
+}
+
+.video_info {
+	border: 1px solid gray;
+	border-radius: 0.5rem;
+	margin-bottom: 0.5rem;
+	padding: 1rem;
+}
+
+.video_info > div {
+	margin-bottom: 0.5rem;
+}
+
+.video_info .title {
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+
+.video_info .views_more {
+	font-size: 0.8rem;
+}
+
+.video_info .views_more button {
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+}
+
+.video_info .author .flex {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.video_info .author .flex .author_name {
+	font-weight: bold;
+	display: flex;
+	align-items: center;
+}
+
+.video_info .author .flex .author_name * {
+	margin-right: 0.5rem;
+}
+
+.video_info .author .flex .author_name img {
+	border-radius: 100rem;
+	margin-right: 0.5rem;
+}
+
+.likes_and_download {
+	display: flex;
+	align-items: center;
+}
+
+.likes_and_download > * {
+	margin-right: 1rem;
+	display: flex;
+	align-items: center;
+	color: white;
+	background-color: black;
+	border-radius: 1rem;
+	padding: 0.5rem;
+}
+
+.likes_and_download > * > * {
+	margin-right: 0.5rem;
+	cursor: pointer;
+}
+
+.subscribe {
+	padding: 0.5rem;
+	background-color: white;
+	color: black;
+	border-radius: 1rem;
+	font-weight: normal;
+	cursor: pointer;
+}
+
+.description {
+	transition: all 0.2s ease-in-out;
+	overflow: hidden;
+}
+
+.height_0 {
+	height: 0;
+}
+
+.comment_section {
+	border: 1px solid gray;
+	border-radius: 0.5rem;
+	display: grid;
+	grid-template: 1fr / 1fr;
+	margin-bottom: 0.5rem;
+}
+
+.comment_section > div {
+	display: flex;
+	flex-direction: column;
+	grid-row: 1 / 2;
+	grid-column: 1 / 2;
+}
+
+#comments {
+	z-index: 1;
+	padding: 1rem;
+}
+
+.comment {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	padding: 1rem 0;
+}
+
+.comment > div {
+	width: 100%;
+	margin-bottom: 0.5rem;
+}
+
+.comment_name {
+	font-weight: bold;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.comment_name_name {
+	display: flex;
+	align-items: center;
+}
+
+.comment_name_name > img {
+	border-radius: 100rem;
+}
+
+.comment_name_name > * {
+	margin-right: 0.5rem;
+}
+
+.comment_footer {
+	font-weight: bold;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#replies {
+	z-index: 0;
+}
+
+#recommended {
+	grid-row: 2 / 13;
+	grid-column: 7 / 13;
+	border: 1px solid gray;
+	border-radius: 0.5rem;
+	overflow: scroll;
+	display: grid;
+	grid-template-columns: 1fr;
+}
+
+#recommended > div {
+	width: 100%;
+	margin-bottom: 0.5rem;
+}
+
+#recommended > div > .container {
+	display: flex;
+	padding: 0.5rem;
+	border-radius: 0.5rem;
+}
+
+#recommended > div > .container:hover {
+	background-color: rgb(10,10,10);
+}
+
+.recommended_video .container .thumbnail {
+	flex: 3;
+	border-radius: 0.5rem;
+	overflow: hidden;
+	transition: all 0.3s ease-in-out;
+	margin-right: 0.5rem;
+}
+
+.recommended_video .container .thumbnail:hover {
+	transform: scale(1.1);
+}
+
+.recommended_video .container .thumbnail img {
+	width: 100%;
+	object-fit: fill;
+}
+
+.recommended_video .container .video_data {
+	flex: 5;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.recommended_video .container .video_data .recommended_video_title {
+	font-weight: bold;
+	font-size: 1.2rem;
+}
+
+.recommended_video_author {
+	display: flex;
+	align-items: center;
+	font-size: 0.8rem;
+}

@@ -1,0 +1,112 @@
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.menu {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 100%;
+	grid-row: 2 / 13;
+	grid-column: 1 / 4;
+	overflow: scroll;
+}
+
+.menu > div {
+	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.icon {
+	width: 100%;
+	padding: 1rem;
+	cursor: pointer;
+	border-radius: 0.5rem;
+}
+
+.icon:hover {
+	background-color: rgb(50,50,50);
+}
+
+hr {
+	width: 100%;
+}
+
+.videos {
+	grid-row: 2 / 13;
+	grid-column: 4 / 13;
+	overflow: scroll;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+}
+
+.video {
+	padding: 0.5rem;
+	border-radius: 0.5rem;
+}
+
+.video .container {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+.video:hover {
+	background-color: rgb(10,10,10);
+}
+
+.thumbnail {
+	width: 100%;
+	height: 10rem;
+	border-radius: 0.5rem;
+	overflow: hidden;
+	margin-bottom: 0.5rem;
+	transition: transform 0.2s ease-in-out;
+	cursor: pointer;
+}
+
+.thumbnail:hover {
+	transform: scale(1.1);
+}
+
+.thumbnail > img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.title {
+	width: 100%;
+	font-size: 1.2rem;
+	margin-bottom: 0.5rem;
+	cursor: pointer;
+}
+
+.title:hover {
+	color: lightcyan;
+	text-decoration: underline;
+}
+
+.uploader {
+	width: 100%;
+	font-size: 0.8rem;
+	display: flex;
+	align-items: center;
+	margin-bottom: 0.5rem;
+	cursor: pointer;
+}
+
+.uploader > span {
+	margin-right: 0.5rem;
+}
+
+.views_date {
+	width: 100%;
+	font-size: 0.8rem;
+	display: flex;
+	align-items: center;
+}
+

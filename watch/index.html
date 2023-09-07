@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Watch Video</title>
+	<link rel="stylesheet" href="../global.css" media="all">
+	<link rel="stylesheet" href="style.css" media="all">
+	<script src="https://kit.fontawesome.com/eb2155b008.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<nav>
+		<div class="nav_left">
+			<div class="icons">
+				<i class="fa fa-bars fa-lg"></i>
+			</div>
+			<div class="logo">
+				<div class="icons">
+					<i class="fa-brands fa-youtube fa-xl" style="color: red;"></i>
+				</div>
+				<a href="/InfoTube/home">InfoTube</a>
+			</div>
+		</div>
+		<form action="/InfoTube/home/" class="nav_center">
+			<input id="search" type="text" name="search" placeholder="Search for videos">
+			<div class="search_icon">
+				<i class="fa fa-search fa-lg"></i>
+			</div>
+		</form>
+		<div class="nav_right">
+			<div class="icons">
+				<i class="fa-solid fa-video fa-lg"></i>
+			</div>
+			<div class="icons">
+				<i class="fa-solid fa-bell fa-lg"></i>
+			</div>
+		</div>
+	</nav>
+	<section class="video_section">
+		<div id="video"></div>
+		<div id="video_info"></div>
+		<div class="comment_section">
+			<div id="comments"></div>
+			<div id="replies"></div>
+		</div>
+	</section>
+	<div id="recommended"></div>
+</body>
+<script src="../global.js"></script>
+<script src="script.js"></script>
+</html>

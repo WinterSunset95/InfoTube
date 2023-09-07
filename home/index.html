@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>InfoTube</title>
+	<link rel="stylesheet" href="../global.css" media="all">
+	<link rel="stylesheet" href="style.css" media="all">
+	<script src="https://kit.fontawesome.com/eb2155b008.js" crossorigin="anonymous"></script>
+</head>
+<body class="hide_scrollbar">
+	<nav>
+		<div class="nav_left">
+			<div class="icons">
+				<i class="fa fa-bars fa-lg"></i>
+			</div>
+			<div class="logo">
+				<div class="icons">
+					<i class="fa-brands fa-youtube fa-xl" style="color: red;"></i>
+				</div>
+				<a href="/InfoTube/home">InfoTube</a>
+			</div>
+		</div>
+		<form action="/InfoTube/home/" class="nav_center">
+			<input id="search" type="text" name="search" placeholder="Search for videos">
+			<div class="search_icon">
+				<i class="fa fa-search fa-lg"></i>
+			</div>
+		</form>
+		<div class="nav_right">
+			<div class="icons">
+				<i class="fa-solid fa-video fa-lg"></i>
+			</div>
+			<div class="icons">
+				<i class="fa-solid fa-bell fa-lg"></i>
+			</div>
+		</div>
+	</nav>
+	<div class="menu hide_scrollbar">
+		<div class="menu_option">
+			<div class="icon">
+				<i class="fa-solid fa-home fa-lg"></i>
+				<span>Home</span>
+			</div>
+		</div>
+		<div class="menu_option">
+			<div class="icon">
+				<i class="fa-solid fa-home fa-lg"></i>
+				<span>Shorts</span>
+			</div>
+		</div>
+		<div class="menu_option">
+			<div class="icon">
+				<i class="fa-solid fa-home fa-lg"></i>
+				<span>Subscriptions</span>
+			</div>
+		</div>
+		<div>
+			<hr>
+		</div>
+		<div class="menu_option">
+			<div class="icon">
+				<i class="fa-solid fa-home fa-lg"></i>
+				<span>Library</span>
+			</div>
+		</div>
+		<div class="menu_option">
+			<div class="icon">
+				<i class="fa-solid fa-home fa-lg"></i>
+				<span>History</span>
+			</div>
+		</div>
+		<div class="menu_option">
+			<div class="icon">
+				<i class="fa-solid fa-home fa-lg"></i>
+				<span>Your Videos</span>
+			</div>
+		</div>
+		<div class="menu_option">
+			<div class="icon">
+				<i class="fa-solid fa-home fa-lg"></i>
+				<span>Watch Later</span>
+			</div>
+		</div>
+		<div class="menu_option">
+			<div class="icon">
+				<i class="fa-solid fa-home fa-lg"></i>
+				<span>Liked Videos</span>
+			</div>
+		</div>
+	</div>
+	<div class="videos" id="videos"></div>
+</body>
+<script src="../global.js"></script>
+<script src="script.js"></script>
+</html>

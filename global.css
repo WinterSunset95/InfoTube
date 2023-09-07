@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+	font-family: 'Montserrat', sans-serif;
+}
+
+.hide_scrollbar::-webkit-scrollbar {
+	display: none;
+}
+
+.hide_scrollbar {
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+}
+
+body {
+	background-color: rgb(20,20,20);
+	color: white;
+	display: grid;
+	grid-template: repeat(12, 1fr) / repeat(12, 1fr);
+	height: 100vh;
+	gap: 1rem;
+	overflow: scroll;
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: rgb(10,10,10);
+	grid-row: 1 / 2;
+	grid-column: 1 / 13;
+	padding: 0.5rem 0;
+	border-radius: 0.5rem;
+}
+
+nav > div {
+	display: flex;
+}
+
+nav > form {
+	display: flex;
+}
+
+.nav_left {
+	flex: 1;
+	justify-content: flex-start;
+}
+
+.nav_center {
+	flex: 3;
+	justify-content: center;
+}
+
+.nav_right {
+	flex: 1;
+	justify-content: flex-end;
+}
+
+#search {
+	padding: 0 0 0 1rem;
+	background-color: black;
+	border: 1px solid gray;
+	border-radius: 5rem 0 0 5rem;
+	flex: 1;
+	color: white;
+}
+
+.search_icon {
+	padding: 0.5rem 1rem;
+	border: 1px solid gray;
+	background-color: rgb(50,50,50);
+	border-radius: 0 5rem 5rem 0;
+	cursor: pointer;
+}
+
+.search_icon:active {
+	background-color: rgb(100,100,100);
+}
+
+.icons {
+	margin: 0 0.5rem;
+}
+
+.logo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
